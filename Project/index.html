@@ -20,8 +20,47 @@ VANTA.CELLS({
 })
 </script>
 </head>
+
+
 <body>
-    <!-- Your content goes here -->
-    <script src="index.js"></script>
+  <div class="container">
+    <header>
+        <h1 style="margin-right: 10px;">HomePage</h1>
+    </header>
+    <div class ="central-box">
+    <main>
+        <section>
+            <h2>You've been messed up today...</h2>
+            <p style="padding: 5px; margin-left: 10px;">What bad behavior have you done today?</p>
+        </section>
+    </main>
+    </div>
+  </div>
+  <script src="index.js"></script>
 </body>
+
+
+
+<style>
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header{
+    text-align: center;
+    padding: 5px;
+    background-color: #88f2a4;
+    color: rgb(115, 112, 108);
+    
+  }
+  .central-box{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
 </html>
