@@ -1,36 +1,41 @@
-
+/* General Design */
 
 .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
-  header{
+header{
     text-align: center;
     padding: 5px;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .central-box{
+}
+.central-box{
     color:white;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family:'Courier New', Courier, monospace;
-  }
-  .intro {
+}
+
+.intro {
     background-color: rgba(1, 128, 105, 0.521);
     padding:10vh;
     border-radius: 30%;
-  }
-  #background {
+}
+
+#background {
     width: 100%;
     height: 100%;
-  }
-  ul {
+}
+
+/* Dropdown */
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -85,6 +90,8 @@ li.dropdown {
   display: block;
 }
 
+/* Achohol page */
+
 .central-box-a {
     color:white;
     flex:auto;
@@ -92,4 +99,4 @@ li.dropdown {
     justify-content: center;
     align-items: center;
     font-family:'Courier New', Courier, monospace;
-  }
+}
