@@ -1,7 +1,16 @@
 /* General Design */
 
+#background {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
 .container {
     height: 100vh;
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,9 +18,27 @@
 
 header{
     text-align: center;
-    padding: 5px;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.habits {
+    display: flex;
+    justify-content:center;
+}
+
+.habits a { 
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin-right: 5px;
+  width:30%;
+  background-color: rgba(2, 65, 47, 0.655);
+  text-decoration: none;
+}
+
+.habits a:hover {
+ background-color: rgba(2, 65, 47, 0.817);
 }
 .central-box{
     color:white;
@@ -28,10 +55,7 @@ header{
     border-radius: 30%;
 }
 
-#background {
-    width: 100%;
-    height: 100%;
-}
+
 
 /* Dropdown */
 
