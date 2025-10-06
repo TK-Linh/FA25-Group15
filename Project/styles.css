@@ -50,9 +50,15 @@ header{
 }
 
 .intro {
-    background-color: rgba(1, 128, 105, 0.521);
-    padding:10vh;
-    border-radius: 30%;
+    background-color: rgba(1, 128, 105, 0.329);
+    border: #88f3a8c8  10px;
+        margin: 5px;;
+    border-style: double;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    border-radius: 10%;
 }
 
 
