@@ -200,3 +200,10 @@ img {
   justify-content: center;
   margin:auto;
 }
+
+/*BASIC CSS for habit text- I think it'd be cool to add an animation when you click on one of the drop downs
+if you agree I can work on that.*/
+#habit-text {
+  font-size: 20px;
+  margin: 40px;
+}
