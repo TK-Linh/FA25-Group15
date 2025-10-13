@@ -12,7 +12,7 @@
         <div class="nav-container">
             <div class="nav-item"><a href="index.html" style="text-decoration: none; color: inherit;">Home</a></div>
             <div class="nav-item">
-                Systems
+                Organs
                 <div class="dropdown">
                     <div class="dropdown-item"><a href="cardiovascular.html" style="text-decoration: none; color: inherit;">❤️ Cardiovascular</a></div>
                 </div>
@@ -28,7 +28,7 @@
         <div class="content">
             <!-- Image Section -->
             <div class="image-section">
-                <img src="https://via.placeholder.com/400x500?text=Cardiovascular+System" alt="Cardiovascular System">
+                <img id="heartImage" src="" alt="Cardiovascular System">
             </div>
 
             <!-- Sidebar with Dropdown -->
@@ -42,29 +42,33 @@
                     </div>
                     
                     <div class="dropdown-content" id="habitsList">
-                        <div class="habit-item">
+                        <div class="habit-item" data-habit="smoking">
                             <span class="habit-icon">🚬</span>
                             <span class="habit-name">Smoking</span>
                         </div>
-                        <div class="habit-item">
+                        <div class="habit-item" data-habit="alcohol">
                             <span class="habit-icon">🍺</span>
                             <span class="habit-name">Alcohol</span>
                         </div>
-                        <div class="habit-item">
+                        <div class="habit-item" data-habit="poor-diet">
                             <span class="habit-icon">🍔</span>
                             <span class="habit-name">Poor Diet</span>
                         </div>
-                        <div class="habit-item">
+                        <div class="habit-item" data-habit="sedentary">
                             <span class="habit-icon">🛋️</span>
                             <span class="habit-name">Sedentary Lifestyle</span>
                         </div>
-                        <div class="habit-item">
+                        <div class="habit-item" data-habit="poor-sleep">
                             <span class="habit-icon">😴</span>
                             <span class="habit-name">Poor Sleep</span>
                         </div>
-                        <div class="habit-item">
+                        <div class="habit-item" data-habit="caffeine">
                             <span class="habit-icon">☕</span>
                             <span class="habit-name">Excessive Caffeine</span>
+                        </div>
+                        <div class="habit-item" data-habit="normal">
+                            <span class="habit-icon">❤️</span>
+                            <span class="habit-name">Normal</span>
                         </div>
                     </div>
                 </div>
