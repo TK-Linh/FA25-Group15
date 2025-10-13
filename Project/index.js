@@ -16,7 +16,7 @@ function hs() {
 }
 
 button.addEventListener("click", function() {
-  newp.textContent = 'smoking bad or something idk';
+  newp.textContent = 'smoking bad for your liver';
   habitText.appendChild(newp);
   /**habitText.textContent = `
   Drug indulgence is a destructive habit that takes a severe toll on both the body and mind. Many substances, including stimulants, opioids, and marijuana, cause long-term damage to vital organs and systems. Stimulants like cocaine, meth,
@@ -30,7 +30,7 @@ button.addEventListener("click", function() {
 });
 
 button2.addEventListener("click", function() {
-  newp.textContent = 'alcohol bad or something idk';
+  newp.textContent = 'alcohol bad for your liver';
   habitText.appendChild(newp);
   /** habitText.textContent = `
   Drinking alcohol might seem harmless or even relaxing at first, but it’s actually a habit that takes a serious toll on nearly every part of your body. Long-term alcohol use can lead to cancers of the esophagus, throat, larynx, liver, colon,
@@ -43,7 +43,7 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-  newp.textContent = 'doomscrolling bad or something idk';
+  newp.textContent = 'doomscrolling bad for your liver';
   habitText.appendChild(newp);
   /**habitText.textContent = `
   Doomscrolling—a habit of endlessly consuming negative or distressing content online—can take a serious toll on both mental and physical health. Prolonged screen time, especially among children and teens, has been linked to disruptions in metabolism 
