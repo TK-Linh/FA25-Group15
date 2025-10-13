@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css"></head>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
 
 <body>
   <div id = "background">
-    <div class="container">
+    <div class="container1">
       <header>
         <ul class = "maind">
           <li><a href="index.html"><h2 style="margin-right: 10px;">Home</h2></a></li>
@@ -38,30 +39,17 @@
         <h1>is...</h1>
         </div>
         <img class = "lego" src="images/oval_ver_1.png"/>
-        <a a href="javascript:void(0);" onclick="hs()"><img class = "liver" src="images/SickLiver.PNG"/></a>
-        <img class = "smlg" src="images/SickSmLgIntestine.PNG"/>
+        <a class = "av" href="javascript:void(0);" onclick="hs('info');"><img class = "liver" src="images/SickLiver.PNG"/></a>
+        <a class = "av" href = "javascript:void(0);" onclick= "hs('info2');"><img class = "smlg" src="images/SickSmLgIntestine.PNG"/></a>
         <img class = "stom" src="images/SickStomach.PNG"/>
         <img class = "pan" src="images/SickPancreas.PNG"/>
         <img class = "kdn1" src="images/SickKidney.PNG"/> 
         <img class = "kdn2" src="images/SickKidney.PNG"/>
-        <div id  = "info">
-        </div>
+        <div id  = "info"></div>
+        <div id = "info2"></div>
     </div>
   </div>
   <script src="index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
-  <script>
-  VANTA.CELLS({
-    el: "#background",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00
-  })
-  </script>
 </body>
 
 </html>

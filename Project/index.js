@@ -2,11 +2,12 @@ const button = document.getElementById("smbutton");
 const button2 = document.getElementById("abutton");
 const button3 = document.getElementById("dsbutton");
 const habitText = document.getElementById("info");
+const habitText2 = document.getElementById("info2");
 const newp = document.createElement('p');
+const newp2 = document.createElement('p');
 
-var div = document.getElementById("info");
-
-function hs() {
+function hs(id) {
+  var div = document.getElementById(id);
   if(div.style.display === 'none') {
     div.style.display = 'block';
   }
@@ -16,8 +17,12 @@ function hs() {
 }
 
 button.addEventListener("click", function() {
+  habitText.style.display = 'block';
+  habitText2.style.display = 'block';
   newp.textContent = 'smoking bad for your liver';
   habitText.appendChild(newp);
+  newp2.textContent = 'smoking bad for your small intestine';
+  habitText2.appendChild(newp2);
   /**habitText.textContent = `
   Drug indulgence is a destructive habit that takes a severe toll on both the body and mind. Many substances, including stimulants, opioids, and marijuana, cause long-term damage to vital organs and systems. Stimulants like cocaine, meth,
   or misused Adderall place extreme stress on the heart, increasing the risk of heart attack or stroke, and can even damage blood vessels and the brain due to oxygen deprivation. They can also cause internal issues such as ulcers, tissue death
@@ -30,8 +35,12 @@ button.addEventListener("click", function() {
 });
 
 button2.addEventListener("click", function() {
+  habitText.style.display = 'block'; 
+  habitText2.style.display = 'block';
   newp.textContent = 'alcohol bad for your liver';
   habitText.appendChild(newp);
+  newp2.textContent = 'alcohol bad for your small intestine';
+  habitText2.appendChild(newp2);
   /** habitText.textContent = `
   Drinking alcohol might seem harmless or even relaxing at first, but it’s actually a habit that takes a serious toll on nearly every part of your body. Long-term alcohol use can lead to cancers of the esophagus, throat, larynx, liver, colon,
   and even the rectovaginal area. It damages vital organs like the liver and kidneys, raises blood pressure, and irritates the stomach lining while inflaming the pancreas. Over time, alcohol dehydrates you, throws off your body’s
@@ -43,8 +52,12 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
+  habitText.style.display = 'block';
+  habitText2.style.display = 'block';
   newp.textContent = 'doomscrolling bad for your liver';
   habitText.appendChild(newp);
+  newp2.textContent = 'doomscrolling bad for your small intestine';
+  habitText2.appendChild(newp2);
   /**habitText.textContent = `
   Doomscrolling—a habit of endlessly consuming negative or distressing content online—can take a serious toll on both mental and physical health. Prolonged screen time, especially among children and teens, has been linked to disruptions in metabolism 
   and an increased risk of developing metabolic syndrome, which includes conditions such as high cholesterol, high blood pressure, elevated blood sugar, and high triglyceride levels. These health problems often stem from extended periods of inactivity 

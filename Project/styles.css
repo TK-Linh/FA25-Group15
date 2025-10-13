@@ -1,22 +1,24 @@
 /* General Design */
-#background {
-    width: 100vw;
-    height:100vw;
-    display:flex;
-    position:absolute;
-    top: 0;
-    left: 0;
-    bottom:0;
-    background-size: cover;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
 
 }
 
 .container {
-    height: 100vh;
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  height: 100vh;
+  width:100vw;
+  display:flex;
+  flex-direction: column;
 }
 
 header{
@@ -197,9 +199,10 @@ li.dropdown1 {
 
 .lego {
   width: 50vw;
+  height: 100vw;
   justify-content: center;
   margin:auto;
-  position: relative
+  position: absoulte;
 }
 
 .liver {
@@ -212,7 +215,7 @@ li.dropdown1 {
 .smlg {
   width: 40vw;
   position: relative;
-  top: -58vw;
+  top: -40vw;
   left: 30vw;
 }
 
@@ -220,43 +223,60 @@ li.dropdown1 {
   width: 18vw;
   rotate: 45deg;
   position: relative;
-  top: -103vw;
+  top: -45vw;
   left: 42vw;
 }
 
 .pan {
   width: 12vw;
   position: relative;
-  top: -115vw;
+  top: -57vw;
   left: 40vw;
 }
 
 .kdn1 {
   width: 12vw;
   position: relative;
-  top: -125vw;
-  left: 50vw;
+  top: -68vw;
+  left: 52vw;
 }
 
 .kdn2 {
   width: 12vw;
   transform: scaleX(-1);
   position: relative;
-  top: -137vw;
-  left: 35vw;
+  top: -80vw;
+  left: 34vw;
 }
 
 #info {
   display: none;
   padding: 25px;
-  color: #f9f9f992;
+  color: aquamarine;
+  width:20%;
+  position:relative;
+  top:-100vw;
+  left: 3vw;
+  background-color: rgba(0, 255, 255, 0.084);
+  border: aquamarine solid 2px;
+  border-radius: 10%;
+}
+
+#info2 {
+  display: none;
+  padding: 25px;
+  color: rgb(159, 127, 255);
   width:20%;
   position: relative;
-  top:-157vw;
+  top:-87vw;
   left: 3vw;
   background-color: rgba(0, 255, 255, 0.139);
-  border: aquamarine solid 2px;
-    border-radius: 10%;
+  border: rgb(159, 127, 255) solid 2px;
+  border-radius: 10%;
+}
+
+.av {
+  height: 0;
 }
 
 /*BASIC CSS for habit text- I think it'd be cool to add an animation when you click on one of the drop downs
