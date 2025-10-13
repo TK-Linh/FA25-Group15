@@ -201,6 +201,7 @@ li.dropdown1 {
 .lego {
   width: 50vw;
   height: 100vw;
+  opacity:0% ;
   justify-content: center;
   margin:auto;
   position: absoulte;
