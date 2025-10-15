@@ -287,3 +287,105 @@ if you agree I can work on that. (I agree - SZ)*/
   font-size: 20px;
   margin: 40px;
 }
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  z-index: 100;
+}
+
+.sidebar-title {
+  font-size: 1.3em;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.habits-dropdown {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.dropdown-header {
+  background: rgba(1, 128, 105, 0.8);
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.dropdown-header:hover {
+  background: rgba(1, 128, 105, 1);
+}
+
+.dropdown-toggle {
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+.dropdown-toggle.open {
+  transform: rotate(180deg);
+}
+
+.sidebar-dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.sidebar-dropdown-content.open {
+  max-height: 500px;
+}
+
+.sidebar-habit-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-habit-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-habit-item:hover {
+  background: #f9f9f9;
+}
+
+.sidebar-habit-icon {
+  font-size: 1.5em;
+  width: 30px;
+  text-align: center;
+}
+
+.sidebar-habit-name {
+  flex: 1;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 90%;
+    margin: 20px auto;
+  }
+}
