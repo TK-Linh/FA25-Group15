@@ -1,0 +1,47 @@
+/* Page-specific styles for Brain & Nervous page */
+.organ-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  justify-content: center; /* center vertically within available space */
+  gap: 1.2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.organ-image {
+  max-width: 320px; /* control image size */
+  width: 40vw;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  display: block;
+}
+
+.organ-image.main-organ {
+  width: 48vw;
+  max-width: 420px;
+}
+
+.stacked {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Slight visual offset so the stacked images appear as a vertical column */
+.organ-image.stacked-top {
+  transform: translateY(0);
+}
+
+.organ-image.stacked-bottom {
+  transform: translateY(0);
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .organ-image { width: 70vw; max-width: 260px; }
+  .organ-image.main-organ { width: 78vw; max-width: 320px; }
+}
