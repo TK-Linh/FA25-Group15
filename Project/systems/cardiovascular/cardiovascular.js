@@ -27,6 +27,15 @@ function selectHabit(habit) {
   }
 }
 
+// Reset to normal heart
+function resetHeart() {
+  console.log('Reset to normal heart');
+  const heartImage = document.getElementById('heartImage');
+  if (heartImage) {
+    heartImage.src = heartImages.normal;
+  }
+}
+
 // Close dropdown when clicking outside
 document.addEventListener('click', function(event) {
   const dropdown = document.querySelector('.habits-dropdown');
